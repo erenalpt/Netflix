@@ -10,18 +10,18 @@ function selectItem(e) {
     //grab content
     const tabContentItem = document.querySelector(`#${this.id}-content`);
     //add show class
-    tabContentItem.classList.add('Show');
+    tabContentItem.classList.add('show');
 }
 
 function removeBorder() {
-    tabItems.forEach(item => item.classList.remove('tab-border'));
+    tabItems.forEach(item => {item.classList.remove('tab-border');});
 }
 
 
 function removeShow() {
-    tabContentItems.forEach(item => item.classList.remove('show'));
+    tabContentItems.forEach(item => {item.classList.remove('show');});
 }
 
 
 //tab click
-tabItems.forEach(item => item.addEventListener('click', selectItem));
+tabItems.forEach(item => {item.addEventListener('click', selectItem);});
